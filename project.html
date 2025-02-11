@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <h1>Welcome to Ommek Sannefa</h1>
+<p>Your perfect destination for authentic Tunisian recipes</p>
+    </header>
+
+    <section id="add-recipe">
+<h2>Add a New Recipe</h2>
+        <form id="recipe-form">
+     <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" name="recipe-name" required>
+
+    <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" required></textarea>
+
+     <label for="instructions">Instructions:</label>
+        <textarea id="instructions" name="instructions" rows="5" required></textarea>
+
+        <button type="submit">Add Recipe</button>
+        </form>
+    </section>
+
+          <section id="recipe-display">
+        <h2>Recipes</h2>
+          <div id="recipes">
+            <ul id="recipeList"></ul>
+        </div>
+        </section>
+
+      <script src="script.js"></script>
+</body>
+
+
+
+</html>
